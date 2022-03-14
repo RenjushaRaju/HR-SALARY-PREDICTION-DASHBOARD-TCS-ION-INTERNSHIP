@@ -1,0 +1,120 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR salary Prediction Model</title>
+        <link rel="stylesheet" href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css">
+ 
+</head>
+<body>
+
+
+ <div class="container w-50 border rounded mt-5 shadow p-3" >
+              <form action="{{url_for('predict')}}"method="post" id="input head">
+            <div class="row bg-warning border rounded  p-2 text-center">
+                <div class="col">
+                  <h5 class="">HR Sales Prediction Model</h5>
+                </div>
+            </div>
+            
+            <div class="row  mt-3">
+                <div class="col-md-3  offset-md-2">
+                      Select Year of experience
+                </div>
+                <div class="col-md-5 ">
+                    <input class="form-control" type="text" name="YearsOfExperience" required>
+                </div>
+            </div>
+            
+
+            <div class="row  mt-3">
+                <div class="col-md-3  offset-md-2">
+                        Select Position
+                </div>
+                <div class="col-md-5 ">
+                    <select name="Position" class="form-control" required> 
+                       <option value="">Select Position</option>
+                        
+                        <option value="1">Administrative Assistant</option>
+                        <option value="2">Area Sales Manager</option>
+                        <option value="3">BI Developer</option>
+                        <option value="4">BI Director</option>
+                        <option value="5">CIO</option>
+                        <option value="6">Data Analyst</option>
+                        <option value="7">Data Architect</option>
+                        <option value="8">Database Administrator</option>
+                        <option value="9">Director of Operations</option>
+                        <option value="10">Director of Sales</option>
+                        <option value="11">Enterprise Architect</option>
+                        <option value="12">IT Director</option>
+                        <option value="13">IT Manager - DB</option>
+                        <option value="14">IT Manager - Infra</option>
+                        <option value="15">IT Manager - Support</option>
+                        <option value="16">IT Support</option>
+                        <option value="17">Network Engineer</option>
+                        <option value="18">President & CEO</option>
+                        <option value="19">Principal Data Architect</option>
+                        <option value="20">Production Manager</option>
+                        <option value="21">Production Technician I</option>
+                        <option value="22">Production Technician II</option>
+                        <option value="23">Sales Manager</option>
+                        <option value="24">Senior BI Developer</option>
+                        <option value="25">Shared Services Manager</option>
+                        <option value="26">Software Engineer</option>
+                        <option value="27">Software Engineering Manager</option>
+                        <option value="28">Sr. Accountant</option>
+                        <option value="29">Sr. DBA</option>
+                        <option value="30">Sr. Network Engineer</option>
+                        <option value="1">Accountant I</option>
+
+                            </select>
+                </div>
+            </div>
+            <div class="row  mt-3">
+                <div class="col-md-3  offset-md-2">
+                        Select Department
+                </div>
+                <div class="col-md-5 ">
+                    <select name="Department" class="form-control" required>
+                        <option value="0">Admin Offices</option>
+                        <option value="1">Executive Office</option>
+                        <option value="2">IT/IS</option>
+                        <option value="3">Production</option>
+                        <option value="4">Sales</option>
+                        <option value="5">Software Engineering</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row  mt-3">
+                <div class="col-md-3  offset-md-2">
+                        Select Performance score
+                </div>
+                <div class="col-md-5 ">
+                <select name="PerformanceScore" class="form-control" required>
+                 <option value="">Select PerformanceScore</option>
+                    <option value="0">Exceeds</option>
+                    <option value="1">Fully Meets</option>
+                    <option value="2">Needs Improvement</option>
+                    <option value="3">PIP</option>
+
+
+
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 offset-md-4">
+                    <input class="form-control mt-5 btn btn-primary" type="submit" value="Predict" >
+                </div>
+            </div>
+        </form>
+       
+              
+        </div>
+
+   
+</body>
+</html>
+
+
+
